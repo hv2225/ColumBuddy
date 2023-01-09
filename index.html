@@ -1,0 +1,332 @@
+<!-- Header -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<body>
+
+  <!-- Introduction Section-->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card-header">
+          <div class="card-body">
+
+            <!-- aboutUs: reference: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert -->
+
+            <a id="about" class="card-title box" href="#" onclick="aboutUs()">Terms and Condition</a>
+
+            <div id="aboutUsModal">By accessing or using ColumBuddy’s services, you agree to be bound by these terms, including our Privacy and Cookie Policies, so it is important that you read this agreement carefully before you create an account. We may update the terms from time to time, so you should check this page regularly for updates.Welcome to ColumBuddy, operated by HCC group, LLC, in the case of users originating from within the Columbia University in the case of users originating from outside of the United States.
+              <br>
+              <br>
+              As used in this Agreement, the terms “ColumBuddy,” “us,” “we,” the “Company”, and “our” shall refer to HCC group, and/or LLC as appropriate. By accessing or using our Services on the Website, mobile application (the “App”), or any other platforms or services ColumBuddy may offer (collectively, the “Service” or our “Services”), you agree to, and are bound by, these Terms of Use (the “Terms” or “Agreement”).
+              <br>
+              <br>
+              This Agreement applies to anyone who accesses or uses our Services, regardless of registration or subscription status.Your use of our Services is also subject to the Privacy Policy, Cookie Policy, and any terms disclosed and agreed to by you when you purchase additional features, products, or services from ColumBuddy (“Additional Terms Upon Purchase”), which are incorporated into this Agreement by reference. If you do not wish to be bound by this Agreement, do not use our Services.We reserve the right to modify, amend, or change the Terms at any time. Notice of any material change will be posted on this page with an updated effective date.
+              <br>
+              <br>
+              In certain circumstances, we may notify you of a change to the Terms via email or other means, as appropriate under the circumstances; however, you are responsible for regularly checking this page for notice of any changes. We agree that future changes will not be retroactive without your consent. Your continued use of our Services constitutes your acceptance of any change, and you will be legally bound by the updated Terms. If you do not accept a change to the terms, you should stop using our Services immediately.
+              <br>
+              <br>
+              <button onclick="closeModal()">Close</button>
+            </div>
+            </span>
+            <span class="card-title" style="color:#fff"> | </span>
+
+            <!-- reference: https://stackoverflow.com/questions/16308779/how-can-i-hide-show-a-div-when-a-button-is-clicked 
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert -->
+            <span class="card-title"><a href="#" onclick="show(contactEl)">Contact Us </a>
+
+              <div id="contactForm">
+                <form action="/action_page.php">
+                  <label for="fname">Name</label>
+                  <input type="text" placeholder="Your name..">
+
+                  <label for="email">Email</label>
+                  <input type="text" placeholder="Your email address..">
+
+                  <label for="subject">Subject</label>
+                  <textarea placeholder="We'd love to hear your opinion!" style="height:200px"></textarea>
+                </form>
+                <button onclick="hide(contactEl)">Submit</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="title">ColumBuddy</h1>
+        <p style="text-align:center">designed for Columbia students</p>
+        <hr>
+        <h4 style="text-align:center">We know that you got 99 problems, and finding a study buddy ain't one!</h4>
+        <br>
+
+        <!-- Slideshow Container -->
+        <div class="slideshowContainer">
+          <!-- slideshow -->
+          <div class="slide fade">
+            <img src="https://assets.codepen.io/6907999/C1.png" style="width:100%" alt="1">
+            <div class="caption">"Meeting people to study together couldn't be easier for me"</div>
+          </div>
+          <div class="slide fade">
+            <img src="https://assets.codepen.io/6907999/C2.png" style="width:100%" alt="2">
+            <div class="caption">"You should have used ColumBuddy by now if you are an extrovert like I am"</div>
+          </div>
+          <div class="slide fade">
+            <img src="https://assets.codepen.io/6907999/C3.png" style="width:100%" alt="3">
+            <div class="caption">"I don't need to worry who to study with anymore since I use ColumBuddy"</div>
+          </div>
+          <div class="slide fade">
+            <img src="https://assets.codepen.io/6907999/C4.png" style="width:100%" alt="4">
+            <div class="caption">We know that you got 99 problems, and finding a study buddy ain't one!</div>
+          </div>
+          <!-- next button-->
+          <a class="previous" onlick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onlick="plusSlides(-1)">&#10095;</a>
+
+        </div>
+        <br>
+        <hr>
+
+        <!-- updated sign up login session w/ JS-->
+        <span class="col-xs-6" style="text-align:center">
+          <button type="button" onclick="showContent('log-in')" class="btn btn-lg btn-success"><a href="#log-in">Log In</a></button>
+        </span>
+        <span class="col-xs-6" style="text-align:center">
+          <button type="button" onclick="showContent('sign-up')" class="btn btn-lg btn-primary"><a href="#sign-up">Sign Up</a></button>
+        </span>
+        <br>
+        <br>
+
+        <!-- Footer -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+          <div class="container" id="footer">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-12 text-center">
+
+                    <p>Copyright 2021 |<strong> All rights reserved</strong> | Columbia Buddy Inc.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </footer>
+
+        <div id="logSignPlace">
+        </div>
+
+        <div id="log-in" class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="card">
+                <div class="card-body" style="text-align:left">
+                  <h4>Log In</h4>
+                  <form>
+                    <div class="mb-3">
+                      <label for="uni" class="form-label">Your Uni</label>
+                      <input type="text" class="form-control" id="uni" aria-describedby="uniHelp" placeholder="Please use your Columbia uni">
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="InputPassword1" placeholder="Insert your password here">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="Check1">
+                      <label class="form-check-label" for="Check1">Agree to Terms and Conditions</label>
+
+                    </div>
+                    <span>
+                      <button type="submit" class="btn btn-success"><a href="#information" onclick="showContent('information')">Login</a></button>
+                      <span><a href="#" onclick="forgetPassword()">Forgot my password</a></span>
+                      <p><a> <a href="#sign-up" onclick="showContent('sign-up')">I don't have an account</a></p>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sign-up" class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="card">
+                <div class="card-body" style="text-align:left">
+                  <h4>Join Us</h4>
+                  <form>
+
+                    <div class="mb-3">
+                      <label for="InputName" class="form-label">Full Name</label>
+                      <input type="name" class="form-control" id="inputName" placeholder="Please insert your name according to your ID">
+                    </div>
+                    <div class="mb-3">
+                      <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Please use your Columbia email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputPhone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="InputPhone" placeholder="Please enter your phone number">
+                      </div>
+                      <label for="InputSchool" class="form-label">School Affiliation</label>
+                      <input type="name" class="form-control" id="InputSchool" placeholder="(e.g.: Barnard College, Teacher's College, School of International and Public Affairs, etc)">
+                    </div>
+                    <div class="mb-3">
+                      <label class="dropdown" for="inlineFormSelectPref">Gender</label>
+                      <select class="form-select" id="inlineFormSelectPref">
+                        <option selected>Choose...</option>
+                        <option value="1">Female</option>
+                        <option value="2">Male</option>
+                        <option value="3">Non-binary</option>
+                        <option value="4">Prefer not to say</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="dropdown" for="inlineFormSelectPref">Pronouns</label>
+                      <select class="form-select" id="inlineFormSelectPref">
+                        <option selected>Choose...</option>
+                        <option value="1">She/Her</option>
+                        <option value="2">He/Him</option>
+                        <option value="3">They/Them</option>
+                        <option value="4">Prefer not to say</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="InputPassword" placeholder="Passwords must contain: a minimum of 1 lower case letter [a-z] and. a minimum of 1 upper case letter [A-Z] and. a minimum of 1 numeric character [0-9] and">
+                    </div>
+                    <div class="mb-4">
+                      <form action="/action_page.php">
+                        <label for="img">Upload Photo</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <input type="submit">
+                      </form>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="Check">
+                      <label class="form-check-label" for="Check1">Agree to Terms and Conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-success" onclick="setName()"> <a href="#log-in" onclick="showContent('log-in')"> Create Account </a> </button>
+                    <button type="cancel" class="btn btn-danger">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Match Me Section-->
+  <div class="container" id="information">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 style="text-align:center">Hi <span id="theUni"></span>, You Are One Step Closer to Find A Match</h3>
+        <div class="card" style="text-align:left">
+          <div class="card-body" style="text-align:left">
+            <h4 style="text-align:center">Fill The Form</h4>
+            <form class="col-xs-12">
+              <label for="text" class="form-label">Day:</label>
+              <select id="inputDay" class="form-select" onChange="track(value)">
+                <option default></option>
+                <option value="Today">Today</option>
+                <option value="Tomorrow">Tomorrow</option>
+                <option value="The Day After Tomorrow">The Day After Tomorrow</option>
+              </select>
+            </form>
+            <form class="col-xs-12">
+              <label for="text" class="form-label">Time:</label>
+              <select id="inputTime" class="form-select" onChange="track2(value)">
+                <option default></option>
+                <option value="08.00-12.00">08.00-12.00</option>
+                <option value="12.00-16.00">12.00-16.00</option>
+                <option value="16.00-20.00">16.00-20.00</option>
+                <option value="20.00-24.00">20.00-24.00</option>
+              </select>
+            </form>
+
+            <div class="col-xs-12">
+              <label for="text" class="form-label">Preference</label>
+              <select id="inputActivity" class="form-select">
+                <option default></option>
+                <option>quiet time</option>
+                <option>discussion</option>
+                <option>brainstorming</option>
+              </select>
+            </div>
+            <div class="col-xs-12">
+              <label for="inputAddress" class="form-label">Where would you like to meet up? </label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="on campus, near Hell's Kitchen, online, etc.">
+            </div>
+            <div class="col-xs-12">
+
+              <label for="inputContent" class="form-label"> What will you be working on? </label>
+              <input type="text" class="form-control" id="floatingTextarea2" style="height: 100%" placeholder="Give us a brief explanation to let your match know"> </input>
+            </div>
+            <br>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary" onclick="printMatch()"><a href="#yay-match" onclick="showContent('yay-match')"> Submit</a></button>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- We Found A Match Section-->
+        <div id="yay-match" class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3 style="text-align:center">We Found You A Match!</h3>
+              <div class="card">
+                <div class="card-body" style="text-align:left">
+                  <div id="main-card" class="match-card">
+                    <div id="matchFound">
+                      <!--  Matches are returned!!! Yay congrats you're not lonely afterall -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Evaluation Section-->
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="card-body" style="text-align:left">
+                <div class="rate">
+                  <h3 style="text-align:center">We'd love to hear about your experience!</h3>
+                  <div class="star" onclick="starFunction(1)">☆</div>
+                  <div class="star" onclick="starFunction(2)">☆</div>
+                  <div class="star" onclick="starFunction(3)">☆</div>
+                  <div class="star" onclick="starFunction(4)">☆</div>
+                  <div class="star" onclick="starFunction(5)">☆</div>
+                  <textarea placeholder="How was your experience"></textarea>
+                  <input type="submit" class="btn btn-primary" onclick="alert('Cool! Thank you for your feedback!')">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Contact Now Section
+        </div>
+        <hr>-->
+        <!-- citation: https://www.bootdey.com/snippets/view/chat-app#html -->
+      </div>
+    </div>
+  </div>
+</body>
